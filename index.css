@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Milky Coffee';
+    src: url(Milky\ Coffee.ttf);
+}
+
+body {
+    font-family: "Milky Coffee", sans-serif;
+    background-color: #ffdadd;
+}
+
+h1 {
+    text-align: center;
+    font-size: 300%;
+    color: #ff4373;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-players {
+    display: flex;
+    flex-direction: column;
+}
+
+.show-players {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 0.313rem;
+    margin: 0.75rem 0;
+    box-sizing: border-box;
+    border: 0.25rem solid #ff4373;
+    border-radius: 0.625rem;
+    color: #ff004d;
+    font-family: 'Milky Coffee';
+    font-size: 150%;
+}
+
+.show-players > p {
+    font-size: 150%;
+    color: #ff4373;
+}
+
+label {
+    font-size: 150%;
+    color: #ff4373;
+}
+
+button {
+    font-family: 'Milky Coffee';
+    border: 0.25rem solid #ff4373;
+    margin: 0rem 1.5rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    background-color: #ffa2b5;
+    color: #ff4373;
+}
+
+#button-ok {
+    padding: 0.313rem;
+    margin: 0 0.938rem;
+    font-size: 0.938rem;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#button-start {
+    padding: 0.75rem;
+    font-size: 1.875rem;
+}
+
+#pos1, #pos4 {
+    display: flex;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#pos2, #pos5 {
+    display: flex;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#pos3, #pos6 {
+    display: flex;
+    border-bottom: 2px solid black;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#pos7, #pos8 {
+    display: flex;
+    border-right: 2px solid black;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#pos9 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#line1, #line2, #line3 {
+    display: flex;
+}
+
+
+#pos1p, #pos2p, #pos3p, #pos4p, #pos5p, #pos6p, #pos7p, #pos8p, #pos9p {
+    display: flex;
+    font-size: 400%;
+    color: #ff4373;
+    margin: auto;
+}

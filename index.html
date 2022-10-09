@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Jogo da Velha</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1># Jogo da velha #</h1>
+    </header>
+
+    <main>
+        <section>
+            <div id="players">
+                <form>
+                    <div class="form-players">
+                        <label for="firstPlayer">Digite o nome do primeiro jogador:</label>
+                        <input type="text" id="firstPlayer" name="firstPlayer" value="" required>
+                        <label for="secondPlayer">Digite o nome do segundo jogador:</label>
+                        <input type="text" id="secondPlayer" name="secondPlayer" value="" required>
+                        <button type='button' onclick="onClick()" id="button-ok">OK</button>
+                    </div>
+                </form>
+                <div class="show-players">
+                    <p id="printPlayer1" style="display:none"></p>
+                    <p id="printPlayer2" style="display:none"></p>
+                    <button type='button' id="button-start" onclick="onClickStart()" style="display:none">Iniciar</button>
+                </div>
+
+            </div>
+            <div id="game" style="display:none">
+                <p id="turn"></p>
+                <div id="line1">
+                    <div id="pos1" onclick="onClickPos1()"><p id="pos1p"></p></div>
+                    <div id="pos2" onclick="onClickPos2()"><p id="pos2p"></p></div>
+                    <div id="pos3" onclick="onClickPos3()"><p id="pos3p"></p></div>
+                </div>
+                <div id="line2">
+                    <div id="pos4" onclick="onClickPos4()"><p id="pos4p"></p></div>
+                    <div id="pos5" onclick="onClickPos5()"><p id="pos5p"></p></div>
+                    <div id="pos6" onclick="onClickPos6()"><p id="pos6p"></p></div>
+                </div>
+                <div id="line3">
+                    <div id="pos7" onclick="onClickPos7()"><p id="pos7p"></p></div>
+                    <div id="pos8" onclick="onClickPos8()"><p id="pos8p"></p></div>
+                    <div id="pos9" onclick="onClickPos9()"><p id="pos9p"></p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
