@@ -5,13 +5,13 @@
 
 body {
     font-family: "Milky Coffee", sans-serif;
-    background-color: #ffdadd;
+    background-color: #FEF5FA;
 }
 
 h1 {
     text-align: center;
     font-size: 300%;
-    color: #ff4373;
+    color: #173F5F;
 }
 
 section {
@@ -34,37 +34,33 @@ input {
     padding: 0.313rem;
     margin: 0.75rem 0;
     box-sizing: border-box;
-    border: 0.25rem solid #ff4373;
     border-radius: 0.625rem;
-    color: #ff004d;
+    color: #3CAEA3;
     font-family: 'Milky Coffee';
     font-size: 150%;
 }
 
 .show-players > p {
     font-size: 150%;
-    color: #ff4373;
+    color: #A7BAE7;
 }
 
 label {
     font-size: 150%;
-    color: #ff4373;
-}
-
-button {
-    font-family: 'Milky Coffee';
-    border: 0.25rem solid #ff4373;
-    margin: 0rem 1.5rem;
-    border-radius: 0.625rem;
-    cursor: pointer;
-    background-color: #ffa2b5;
-    color: #ff4373;
+    color: #A7BAE7;
 }
 
 #button-ok {
     padding: 0.313rem;
     margin: 0 0.938rem;
     font-size: 0.938rem;
+    font-family: 'Milky Coffee';
+    border: 0.25rem solid #57466D;
+    margin: 0rem 1.5rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    background-color: #D9BBE6;
+    color: #57466D;
 }
 
 button:hover {
@@ -74,46 +70,57 @@ button:hover {
 #button-start {
     padding: 0.75rem;
     font-size: 1.875rem;
+    font-family: 'Milky Coffee';
+    border: 0.25rem solid #57466D;
+    margin: 0rem 1.5rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    background-color: #D9BBE6;
+    color: #57466D;
 }
 
 #pos1, #pos4 {
     display: flex;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    width: 100px;
-    height: 100px;
+    border-right: 5px solid #57466D;
+    border-bottom: 5px solid #57466D;
+    border-radius: 0.313rem;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
 }
 
 #pos2, #pos5 {
     display: flex;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    width: 100px;
-    height: 100px;
+    border-right: 5px solid #57466D;
+    border-bottom: 5px solid #57466D;
+    border-radius: 0.313rem;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
 }
 
 #pos3, #pos6 {
     display: flex;
-    border-bottom: 2px solid black;
-    width: 100px;
-    height: 100px;
+    border-bottom: 5px solid #57466D;
+    border-radius: 0.313rem;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
 }
 
 #pos7, #pos8 {
     display: flex;
-    border-right: 2px solid black;
-    width: 100px;
-    height: 100px;
+    border-right: 5px solid #57466D;
+    border-radius: 0.313rem;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
 }
 
 #pos9 {
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
 }
 
@@ -121,10 +128,46 @@ button:hover {
     display: flex;
 }
 
-
 #pos1p, #pos2p, #pos3p, #pos4p, #pos5p, #pos6p, #pos7p, #pos8p, #pos9p {
     display: flex;
     font-size: 400%;
     color: #ff4373;
     margin: auto;
+}
+
+#endGame{
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    color: aliceblue;
+    font-size: 200%;
+}
+
+#message {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+#button-restart {
+    padding: 0.75rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Milky Coffee';
+    font-size: 30px;
+    text-decoration: underline;
 }

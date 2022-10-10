@@ -34,24 +34,31 @@
                 </div>
 
             </div>
+            <div id="endGame" style="visibility: hidden;">
+                <div id="message"><p id="text"></p><button type='button' id="button-restart">Jogar novamente</button></div>
+            </div>
             <div id="game" style="display:none">
                 <p id="turn"></p>
                 <div id="line1">
-                    <div id="pos1" onclick="onClickPos1()"><p id="pos1p"></p></div>
-                    <div id="pos2" onclick="onClickPos2()"><p id="pos2p"></p></div>
-                    <div id="pos3" onclick="onClickPos3()"><p id="pos3p"></p></div>
+                    <div id="pos1" onclick="onClickPos1(); this.onclick=null; myfunc();"><p id="pos1p"></p></div>
+                    <div id="pos2" onclick="onClickPos2(); this.onclick=null; myfunc();"><p id="pos2p"></p></div>
+                    <div id="pos3" onclick="onClickPos3(); this.onclick=null; myfunc();"><p id="pos3p"></p></div>
                 </div>
                 <div id="line2">
-                    <div id="pos4" onclick="onClickPos4()"><p id="pos4p"></p></div>
-                    <div id="pos5" onclick="onClickPos5()"><p id="pos5p"></p></div>
-                    <div id="pos6" onclick="onClickPos6()"><p id="pos6p"></p></div>
+                    <div id="pos4" onclick="onClickPos4(); this.onclick=null; myfunc();"><p id="pos4p"></p></div>
+                    <div id="pos5" onclick="onClickPos5(); this.onclick=null; myfunc();"><p id="pos5p"></p></div>
+                    <div id="pos6" onclick="onClickPos6(); this.onclick=null; myfunc();"><p id="pos6p"></p></div>
                 </div>
                 <div id="line3">
-                    <div id="pos7" onclick="onClickPos7()"><p id="pos7p"></p></div>
-                    <div id="pos8" onclick="onClickPos8()"><p id="pos8p"></p></div>
-                    <div id="pos9" onclick="onClickPos9()"><p id="pos9p"></p></div>
+                    <div id="pos7" onclick="onClickPos7(); this.onclick=null; myfunc();"><p id="pos7p"></p></div>
+                    <div id="pos8" onclick="onClickPos8(); this.onclick=null; myfunc();"><p id="pos8p"></p></div>
+                    <div id="pos9" onclick="onClickPos9(); this.onclick=null; myfunc();"><p id="pos9p"></p></div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
+</html>
