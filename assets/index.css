@@ -5,13 +5,13 @@
 
 body {
     font-family: "Milky Coffee", sans-serif;
-    background-color: #FEF5FA;
+    background-color: #f3efe6;
 }
 
 h1 {
     text-align: center;
     font-size: 300%;
-    color: #173F5F;
+    color: #f29598;
 }
 
 section {
@@ -33,21 +33,23 @@ section {
 input {
     padding: 0.313rem;
     margin: 0.75rem 0;
+    border: 0.25rem solid #f3efe6;
     box-sizing: border-box;
     border-radius: 0.625rem;
-    color: #3CAEA3;
+    color: #f498be;
     font-family: 'Milky Coffee';
     font-size: 150%;
+    background-color: #efdde8;
 }
 
 .show-players > p {
     font-size: 150%;
-    color: #A7BAE7;
+    color: #efa88d;
 }
 
 label {
     font-size: 150%;
-    color: #A7BAE7;
+    color: #efa88d;
 }
 
 #button-ok {
@@ -55,12 +57,12 @@ label {
     margin: 0 0.938rem;
     font-size: 0.938rem;
     font-family: 'Milky Coffee';
-    border: 0.25rem solid #57466D;
+    border: 0.25rem solid #f29598;
     margin: 0rem 1.5rem;
     border-radius: 0.625rem;
     cursor: pointer;
-    background-color: #D9BBE6;
-    color: #57466D;
+    background-color: #f8efca;
+    color: #f29598;
 }
 
 button:hover {
@@ -71,56 +73,61 @@ button:hover {
     padding: 0.75rem;
     font-size: 1.875rem;
     font-family: 'Milky Coffee';
-    border: 0.25rem solid #57466D;
+    border: 0.25rem solid #f29598;
     margin: 0rem 1.5rem;
     border-radius: 0.625rem;
     cursor: pointer;
-    background-color: #D9BBE6;
-    color: #57466D;
+    background-color: #f8efca;
+    color: #f29598;
+}
+
+#turn {
+    color: #7a3864;
+    font-size: 1.875rem;
 }
 
 #pos1, #pos4 {
     display: flex;
-    border-right: 5px solid #57466D;
-    border-bottom: 5px solid #57466D;
+    border-right: 0.313rem solid #f6a1a6;
+    border-bottom: 0.313rem solid #f6a1a6;
     border-radius: 0.313rem;
-    width: 150px;
-    height: 150px;
+    width: 7.813rem;
+    height: 7.813rem;
     cursor: pointer;
 }
 
 #pos2, #pos5 {
     display: flex;
-    border-right: 5px solid #57466D;
-    border-bottom: 5px solid #57466D;
+    border-right: 0.313rem solid #f6a1a6;
+    border-bottom: 0.313rem solid #f6a1a6;
     border-radius: 0.313rem;
-    width: 150px;
-    height: 150px;
+    width: 7.813rem;
+    height: 7.813rem;
     cursor: pointer;
 }
 
 #pos3, #pos6 {
     display: flex;
-    border-bottom: 5px solid #57466D;
+    border-bottom: 5px solid #f6a1a6;
     border-radius: 0.313rem;
-    width: 150px;
-    height: 150px;
+    width: 7.813rem;
+    height: 7.813rem;
     cursor: pointer;
 }
 
 #pos7, #pos8 {
     display: flex;
-    border-right: 5px solid #57466D;
+    border-right: 5px solid #f6a1a6;
     border-radius: 0.313rem;
-    width: 150px;
-    height: 150px;
+    width: 7.813rem;
+    height: 7.813rem;
     cursor: pointer;
 }
 
 #pos9 {
     display: flex;
-    width: 150px;
-    height: 150px;
+    width: 7.813rem;
+    height: 7.813rem;
     cursor: pointer;
 }
 
@@ -136,15 +143,15 @@ button:hover {
 }
 
 #endGame{
-    position: fixed; /* Sit on top of the page content */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
+    position: fixed;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
     color: aliceblue;
     font-size: 200%;
 }
@@ -155,7 +162,7 @@ button:hover {
     position: relative;
     top: 50%;
     left: 50%;
-    font-size: 50px;
+    font-size: 3.125rem;
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
@@ -168,6 +175,20 @@ button:hover {
     cursor: pointer;
     color: white;
     font-family: 'Milky Coffee';
-    font-size: 30px;
+    font-size: 1.875rem;
     text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #f29598;
+    font-weight: bold;
+}
+
+a {
+    color: #d56776;
 }
